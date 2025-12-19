@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saran Film</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>ZonaFilm</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="#">Saran Film</a>
+    </nav>
+  </header>
+
+  <section class="film-detail">
+    <h2>Saran Film untuk Rekomendasi</h2>
+    <p>Masukkan film favoritmu agar bisa kami pertimbangkan.</p>
+
+    <form id="formSaran">
+      <label>Judul Film</label><br>
+      <input type="text" required placeholder=><br><br>
+
+      <label>Genre</label><br>
+      <select required>
+        <option value="">-- Pilih Genre --</option>
+        <option>Aksi</option>
+        <option>Drama</option>
+        <option>Horor</option>
+        <option>Komedi</option>
+      </select><br><br>
+
+      <label>Alasan Rekomendasi</label><br>
+      <textarea rows="4" placeholder=></textarea><br><br>
+
+      <button type="submit" class="back-btn">Kirim Saran</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 <b>ZonaFilm</b></p>
+  </footer>
+
+  <script>
+    document.getElementById("formSaran").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Terima kasih! Saran film kamu berhasil dikirim");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
